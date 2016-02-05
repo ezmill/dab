@@ -17,7 +17,7 @@ var loadedItems = 0;
 var loader = new THREE.TextureLoader();
 var images = [
 
-    PATH + "textures/IMG_6559.JPG",
+    // PATH + "textures/IMG_6559.JPG",
 
 ]
 var lookat = new THREE.Vector3(0.0,0.0,0.0);
@@ -54,8 +54,8 @@ function init() {
     controls.noRotate = true;
     container.appendChild(renderer.domElement);
 
-    loadTextures();
-
+    // loadTextures();
+    createScreensaver();
     debounceResize = debounce(onWindowResize, 250);
     window.addEventListener("resize", debounceResize);
     document.addEventListener("mousemove", onMouseMove);
